@@ -1,0 +1,86 @@
+:root {
+  /* Primary Colors */
+  --brand-color-1: #2d5584;
+  --brand-color-2: #dbebff;
+  --brand-color-3: #67abd1;
+  --brand-color-4: #085CB2;
+  /* Neutral colors */
+  --white: #ffffff;
+
+  /* Font Weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  /* Font Families */
+  --ff-lora: "Lora", serif;
+  --ff-crimson-pro: "Crimson Pro", serif;
+  --ff-crimson-text: "Crimson Text", serif;
+  --ff-inter: "Inter", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--brand-color-1);
+  line-height: 1.2;
+}
+
+#root {
+  width: 100%;
+  /* max-width: 1440px; */
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 0.7rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Crimson Pro", serif;
+  color: #085cb2;
+}
+
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  color: #085cb2;
+}
+
+p {
+  font-family: "Lora", serif;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  background-color: #085cb2;
+  height: 357px;
+}
+
+.header-background {
+  background-image: url(assets/ankara.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  cursor: pointer;
+}

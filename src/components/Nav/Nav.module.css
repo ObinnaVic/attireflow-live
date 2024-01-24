@@ -1,0 +1,103 @@
+.desktop_nav {
+    width: 90%;
+    height: 10rem;
+    margin: 0 auto;
+    padding-top: 4%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+}
+
+.nav_contents {
+    display: flex;
+    align-items: center;
+}
+
+.nav_contents h1,
+.open_icon h1 {
+    font-size: 2rem;
+}
+
+.nav_contents ul {
+    display: flex;
+    margin: 0 auto;
+    width: min(50%, 500px);
+    list-style: none;
+}
+
+.nav_contents ul li {
+    margin: 0 5%;
+    cursor: pointer;
+}
+
+.nav_contents ul li p {
+    font-size: 1rem;
+    color: #085cb2;
+}
+
+
+.nav_icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav_icons hr {
+    border-color: #5295d8;
+    margin: 0 10%;
+    height: 20px;
+}
+
+.nav_container {
+    display: none;
+}
+
+.mobile_list {
+    list-style: none;
+}
+
+.open_icon {
+    display: none;
+}
+
+/*Media query which handles the navigation of the mobile view of the application*/
+@media only screen and (max-width: 482px) {
+    .nav_container {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(255, 255, 255);
+        backdrop-filter: blur(0.3rem);
+        transition: transform 600ms ease-out;
+        transform: translateX(100%);
+        z-index: 9999;
+        padding: 10px;
+    }
+
+    .open_nav {
+        transform: translateX(-0%);
+    }
+
+
+    .open_icon {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .desktop_nav {
+        display: none;
+    }
+
+    /*used to ensure support on multiple browsers*/
+    @supports (inset: 0 0 0 0) {
+        .nav-container {
+            inset: 0 0 0 0;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.cart_section {
+    width: 100%;
+    border: 2px solid #085cb2;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.cart_section h3 {
+    font-size: 1.5rem;
+}
+
+.cart_product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .cart_product {
+        padding: 10px;
+    }
+}
+
+.cart_product img {
+    width: 100px;
+}

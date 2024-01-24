@@ -1,0 +1,276 @@
+/* .scroll {
+  overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+} */
+
+/* Handle */
+/* .scroll::-webkit-scrollbar-thumb {
+  background: #8DC5FF;
+  border-radius: 10px;
+} */
+
+/* Handle on hover */
+/* .scroll::-webkit-scrollbar-thumb:hover {
+  opacity: 0.5;
+} */
+
+.wrapper {
+  padding-bottom: 2rem;
+  overflow-x: hidden;
+}
+
+.hero {
+  height: 15rem;
+  background-image: url('../../assets/ankara.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > h2 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+}
+
+.page_heading_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & > h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+.privacy_first_column {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  & > article {
+
+    & > h4 {
+      font-size: 1.875rem;
+      text-transform: capitalize;
+      padding-block: 1rem;
+    }
+  }
+
+
+}
+
+.privacy_wrapper {
+  position: relative;
+  padding: 2rem;
+}
+
+.hidden,
+.privacy_second_column {
+  display: none;
+}
+
+.show_more_policy {
+  display: block;
+}
+
+.more_policy_btn {
+  background-color: #DBEBFF;
+  border: none;
+  border-radius: 50%;
+  margin-top: 1.5rem;
+  width: fit-content;
+  padding: 0;
+  width: fit-content;
+  align-self: center;
+}
+
+.divider {
+  width: 70%;
+  margin: 0 auto;
+  border-top: 1px solid #2F8CED;
+  opacity: 0.5;
+  margin-block: 2rem;
+}
+
+.ordered_list {
+  font-family: "Lora", serif;
+  color: #085cb2;
+  list-style-position: inside;
+  display: grid;
+  gap: 0.5rem;
+}
+
+/* FAQ SECTION */
+
+.accordion {
+  border: none;
+  background-color: inherit;
+}
+
+.faq_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 2rem;
+}
+
+.scroll_to_top {
+  background-color: inherit;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--brand-color-4);
+  text-decoration: underline;
+  transition: transform .3s ease-in-out;
+}
+
+.scroll_to_top:hover {
+  opacity: 0.87;
+  transform: scale(0.95);
+}
+
+.scroll_to_top:active {
+  transform: scale(1.1);
+}
+
+.search {
+  position: relative;
+  border: none;
+  border-radius: 0.625rem;
+  background: hsl(211, 100%, 92%);
+  width: 70%;
+  height: 3rem;
+  padding-inline: 1rem;
+}
+
+.search_input {
+  background-color: inherit;
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.625rem;
+}
+
+.search_input::placeholder {
+  color: var(--brand-color-4);
+  font-size: 1rem;
+}
+
+.search_icon {
+  position: absolute;
+}
+
+.faq_subheading {
+  padding-bottom: 2rem;
+
+  & > h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  & > p {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    letter-spacing: 0.03375rem;
+  }
+}
+
+.faq_heading {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width:765px) {
+  .privacy_first_column {
+    padding-right: 1.5rem;
+  }
+
+  .privacy_first_column::after {
+    content: "";
+    position: absolute;
+    width: 0.15rem;
+    height: 100%;
+    background-color: #8DC5FF;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 2rem;
+  }
+
+  .privacy_first_column::before {
+    content: "";
+    position: absolute;
+    width: 0.15rem;
+    height: 2.5rem;
+    background-color: var(--brand-color-4);
+    top: 0.4rem;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    border-radius: 3rem;
+  }
+
+  .privacy_second_column {
+    display: block;
+    padding-top: 4rem;
+
+    & > ul {
+      list-style-position: inside;
+      list-style-type: none;
+      padding-inline: 1rem;
+
+      & > li {
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: "Crimson Pro", serif;
+        text-transform: capitalize;
+        color: var(--brand-color-4);
+        min-width: fit-content;
+      }
+    }
+  }
+
+  .hero {
+    height: 20rem;
+
+    & > h2 {
+      font-size: 6.25rem;
+    }
+  }
+
+  .privacy_wrapper,
+  .faq_wrapper {
+    padding-inline: 10%;
+  }
+
+  .page_heading_wrap {
+
+    & > h3 {
+      font-size: 2.875rem;
+    }
+  }
+
+  .faq_heading {
+    font-size: 3.4rem;
+  }
+}

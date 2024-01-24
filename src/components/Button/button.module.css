@@ -1,0 +1,27 @@
+.base {
+  display: block;
+  padding: 15px 20px;
+  color: var(--brand-color-1);
+  font-weight: var(--fw-medium);
+  text-transform: capitalize;
+  border: none;
+}
+
+.outline {
+  width: 50%;
+  border: 1px solid var(--brand-color-1);
+  background-color: transparent;
+  border-radius: 30px;
+
+  @media screen and (max-width: 600px) {
+    & {
+      width: 100%;
+    }
+  }
+}
+
+.solid {
+  background-color: var(--brand-color-1);
+  color: var(--white);
+  border-radius: 10px;
+}

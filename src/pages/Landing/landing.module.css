@@ -1,0 +1,300 @@
+h1 {
+  font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+.collection_section,
+.product_section,
+.services_section,
+.review_section,
+.about_section {
+  width: 90%;
+  margin: 90px auto;
+}
+
+.collection_section h3, 
+.product_section h3,
+.services_section h3,
+.review_section h3,
+.about_section h3 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* HERO SECTION */
+
+.hero_section {
+  height: 100svh;
+  width: 90%;
+  margin: 0 auto;
+  padding: 12rem 0;
+}
+
+.hero_section > * {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 482px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .hero_section {
+    padding: 2rem 0;
+  }
+
+  .hero_section > * {
+    margin-bottom: 40px;
+  }
+
+  .hero_section p {
+    font-size: 1.2rem;
+  }
+}
+
+
+.stats {
+  display: flex;
+}
+
+.stats div h2 {
+  margin-bottom: 15px;
+}
+
+.stats > :nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.stats > :nth-child(3),
+.stats > :nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.stats hr {
+  border: 1.2px solid #085cb2;
+}
+
+
+.hero_btn {
+  background-color: #085cb2;
+  width: 163px;
+  height: 41px;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+
+/* COLLECTION SECTION */
+
+.collections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collection_one {
+  background: url(../../assets/clothOne.png);  
+}
+
+.collection_two {
+  background: url(../../assets/clothTwo.png);
+}
+
+.collection_three {
+  background: url(../../assets/clothThree.png);
+}
+
+.collection_four {
+  background: url(../../assets/clothFour.png);
+}
+
+.collection_five {
+  background: url(../../assets/clothFive.png);
+}
+
+.collection_one,
+.collection_two,
+.collection_three,
+.collection_four,
+.collection_five {
+  background-position: center;
+  background-size: cover;
+  width: min(47%, 50rem);
+  height: 19rem;
+  border-radius: 15px;
+  padding: 10px 0;
+  margin-bottom: 5rem;
+}
+
+
+
+.collection_product p {
+  margin: 20px;
+}
+
+.mid_collection {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 482px) {
+  .collection_product {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .collections {
+    flex-direction: column;
+    align-items: center;
+  }
+} 
+
+
+
+
+
+
+
+
+/* SERVICE SECTION */
+
+.service_group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 40px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.service h3 {
+  color: #2F8CED;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .service {
+    flex-direction: column;
+  }
+
+  .service img {
+    width: 40%;
+  }
+}
+
+ 
+
+/* REVIEWS SECTION */
+
+.review_section h5 {
+  font-size: 1.3rem;
+}
+
+.review_section h6 {
+  font-size: 1rem;
+  margin: 30px 0;
+}
+
+.reviews {
+  border: 1px solid #085CB2;
+  border-radius: 30px;
+  padding: 80px;
+  width: min(90%, 1240px);
+  margin: 0 auto;
+}
+
+.reviews h5 {
+  text-align: center;
+}
+
+.reviews p, .reviews h6 {
+  text-align: left;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-top: 30px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .reviews {
+    padding: 10px;
+  }
+  .reviews p, .reviews h6 {
+    text-align: center;
+  }
+  .review {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .review img {
+    width: 90%;
+  }
+}
+
+.about_headers {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about_headers h1 {
+  font-size: 10rem;
+  -webkit-text-stroke: 3px #085cb2;
+  color: transparent; 
+  opacity: 0.2;
+}
+
+.about_headers h2 {
+  position: absolute;
+  font-size: 2.5rem;
+  padding-top: 20px;
+}
+
+.about_paragraph {
+  padding: 70px;
+}
+
+.about_paragraph p {
+  color: #2F8CED;
+}
+
+@media only screen and (max-width: 428px) {
+  .about_headers h1 {
+    font-size: 7rem;
+  }
+
+  .about_paragraph {
+    padding: 30px;
+  }
+}
+
+

@@ -1,0 +1,51 @@
+.card {
+  width: (80%, 300px);
+  margin: 10px 50px;
+}
+
+.img {
+  height: 370px;
+  width: 100%;
+  border: 1px solid blue;
+  border-radius: 20px;
+  padding: 10px 20px;
+  position: relative;
+
+  & + div {
+    margin-top: 15px;
+
+    & p {
+      margin-bottom: 10px;
+      font-weight: var(--fw-regular);
+      font-size: 1.125rem;
+      text-transform: capitalize;
+      font-family: "Inter", sans-serif;
+      color: var(--brand-color-1);
+    }
+
+    & > span {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.img img {
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+@media only screen and (max-width: 428px) {
+  .card {
+    margin: 10px 10px;
+  }
+
+  .img {
+    height: 150px;
+    width: 100%;
+  }
+}

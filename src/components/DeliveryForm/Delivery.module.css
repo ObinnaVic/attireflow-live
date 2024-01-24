@@ -1,0 +1,62 @@
+.delivery_section {
+    flex-grow: 1;
+    width: 100%;
+    border: 2px solid #085cb2;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.delivery_section h1 {
+  font-size: 6rem;
+}
+
+.delivery_section h1,
+.delivery_section h2 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.contact_form {
+  width: min(90%, 800px);
+  margin: 20px auto;
+  border: 1px solid #085cb2;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+  .contact_form {
+    padding: 10px;
+  }
+}
+
+.form_group {
+  margin: 30px 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: #d6eaff;
+  color: #085cb2;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+.submit_btn {
+  padding: 15px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #12559c;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
